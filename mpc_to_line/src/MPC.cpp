@@ -11,8 +11,8 @@ namespace plt = matplotlibcpp;
 using CppAD::AD;
 
 // Set N and dt
-size_t N = 20;
-double dt = 0.3;
+size_t N = 25;
+double dt = 0.05;
 
 // This value assumes the model presented in the classroom is used.
 //
@@ -71,6 +71,7 @@ public:
 
       if (t < N - 2) {
         fg[0] +=
+            2000 *
             CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);
         fg[0] += CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
       }
