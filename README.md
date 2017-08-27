@@ -31,7 +31,7 @@ you'll have to install Ipopt and CppAD.
       brew install ipopt --with-openblas
     ```
   * Linux
-    * Fedora26: sudo dnf install coin-or-Ipopt coin-or-Ipopt-devel 
+    * Fedora26: `sudo dnf install coin-or-Ipopt coin-or-Ipopt-devel`
 
     * [This Dockerfile](./Dockerfile) might be helpful.
     * You will need a version of Ipopt 3.12.1 or higher. The version available through `apt-get` is 3.11.x, sudo apt-get install coinor-libipopt-dev. If you can get that version to work great but if not there's a script `install_ipopt.sh` that will install Ipopt. You just need to download the source from [here](https://www.coin-or.org/download/source/Ipopt/).
@@ -41,5 +41,5 @@ you'll have to install Ipopt and CppAD.
 * [CppAD](https://www.coin-or.org/CppAD/)
   * Mac: `brew install cppad`
   * Linux `sudo apt-get install cppad` or equivalent.
-    * Fedora 26: sudo dnf install cppad cppad-devel
+    * Fedora 26: `sudo dnf install cppad cppad-devel`
   * Windows: TODO. If you can use the Linux subsystem and follow the Linux instructions.
